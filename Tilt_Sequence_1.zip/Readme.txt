@@ -1,0 +1,1 @@
+Images are roughly sequential, filename is tilt angle * 10.

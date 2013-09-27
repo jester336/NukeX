@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>3D Viewer</title>
+    <!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+    <link rel="stylesheet" media="all" href="styles.css" />
+    <style type="text/css">
+</style>
+</head>
+<body>
+
+    <!-- menu -->
+    <nav>
+        <img src="images/logo-iri.gif" />
+        
+        <ul class="accordion-menu">
+
+        <li class="load-model"><a href="#">Demo Items</a>
+                <ul class="sub-menu-demo">
+                    <li><a onclick="pointCloud()">Load Point Cloud Model</a></li>
+                    <li><a onclick="bigPointCloud()">+200,000 Random Points</a></li>
+                    <li><a onclick="showWalrusMandible()">Show Walrus Mandible</a></li>
+                    <li><a onclick="newspaperModel()">Load Newspaper Model</a></li>
+                </ul>
+            </li>
+
+            <li class="microsoft-kinect"><a href="#">*Microsoft Kinect</a>
+                <ul class="sub-menu-microsoft-kinect">
+                    <li><a href="#">*Enable Kinect</a></li>
+                </ul>
+            </li>
+
+            <li class="visual-tools"><a href="#">Visual Tools</a>
+                <ul class="sub-menu-visual-tools">
+                    <li><a onclick="reset()">Reset Model</a></li>
+                    <li id="liAnaglyph"><a onclick="toggleAnaglyph()">Toggle Anaglyph 3D</a></li>
+                    <li id="liParallaxBarrier"><a onclick="toggleParallaxBarrier()">Toggle Parallax Barrier 3D</a></li>
+                </ul>
+            </li>
+
+            <li class="load-model"><a href="#">Load Model</a>
+                <ul class="sub-menu-load-model">
+                    <li>
+                    <input type="file" id="filesNewModel" name="file" />
+                    <a href="#">Load New Model</a>     
+                    </li>
+                    <li>
+                    <input type="file" id="filesTexture" name="file" />
+                    <a href="#">Add Texture to Model
+                    </li>
+                    <li>
+                    <input type="file" id="filesAddModel" name="file" />
+                    <a href="#">Add Model to Canvas</a>
+                    </li>
+                    <li><a onclick="removeAllModels()">Remove all Models</a></li>
+                </ul>
+            </li>
+
+            
+        
+        </ul>
+        <h4>*Features to Come</h4>
+    </nav>
+
+    <!-- main canvas -->
+    <div id="canvas">
+        <div id="progress_bar">
+            <div class="percent">0%</div>
+        </div>
+        <div id="inset"></div>
+        <ul id="modelInfo">
+            <a href="http://vizu.herokuapp.com/">Point Cloud</a>
+        </ul>
+    </div>
+    
+
+
+    <!-- Supporting Scripts -->
+    <script type="text/javascript" src="js/three.js"></script>
+    <script type="text/javascript" src="js/stats.min.js"></script>
+    <script type="text/javascript" src="js/dat.gui.min.js"></script>
+    <script type="text/javascript" src="js/OBJLoader.js"></script>
+    <script type="text/javascript" src="js/TrackballControls.js"></script>
+    <script type="text/javascript" src="js/Detector.js"></script>
+    <script type="text/javascript" src="js/AnaglyphEffect.js"></script>
+    <script type="text/javascript" src="js/ParallaxBarrierEffect.js"></script>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
+    
+    <!-- Main Viewer Script -->
+    <script type="text/javascript" src="js/Viewer.js"></script>
+
+
+</body>
+</html>
