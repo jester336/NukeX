@@ -30,14 +30,14 @@ Timothy Wakeman -- Project Leader
 
 Image Processing Team:
 
-Paul Carpenter
-Nicholas Reedy
-Kyle Nelson
-Phillip Bratt
+Paul Carpenter,
+Nicholas Reedy,
+Kyle Nelson,
+Phillip Bratt,
 
 NukeX Team:
 
-Joshua Newell -- Team Leader
-Jon Larsen
-Brian Stufflebeam
-Trevor Hargraves
+Joshua Newell -- Team Leader,
+Jon Larsen,
+Brian Stufflebeam,
+Trevor Hargraves,
