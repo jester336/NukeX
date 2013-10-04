@@ -3,6 +3,9 @@
  * @author marklundin / http://mark-lundin.com/
  * @author alteredq / http://alteredqualia.com/
  */
+ 
+//Jon Larsen Oct 2013
+//Used for creating 3D images on 3D Monitors
 
 THREE.ParallaxBarrierEffect = function ( renderer ) {
 
