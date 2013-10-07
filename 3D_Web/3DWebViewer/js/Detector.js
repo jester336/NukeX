@@ -2,6 +2,9 @@
  * @author alteredq / http://alteredqualia.com/
  * @author mr.doob / http://mrdoob.com/
  */
+ 
+ //Brian Stufflebeam Oct 2013
+ //Checks to see if graphics card and browser supports WebGL
 
 var Detector = {
 
