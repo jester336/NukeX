@@ -3,6 +3,11 @@
  * @author marklundin / http://mark-lundin.com/
  * @author alteredq / http://alteredqualia.com/
  */
+ 
+ /* Brian Stufflebeam 2013
+ * This class takes 3D images to be viewed through red/cyan glasses. The image contains two copies of the scene, one
+ * through left eye using only red and one through the right eye using only blue or green.
+ */
 
 THREE.AnaglyphEffect = function ( renderer, width, height ) {
 
